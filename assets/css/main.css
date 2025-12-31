@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, p2,p3, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -156,7 +157,7 @@ input, select, textarea {
 
 	h6{ 
 		font-size: 3em;
-		color: #ffffff;
+		color: #000000;
 	}
 
 	header {
@@ -221,7 +222,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
-		font-weight: 1000;
+		font-weight: 280;
 		color: rgba(0, 0, 0, 0.75);
 	}
 	
@@ -234,7 +235,7 @@ input, select, textarea {
 	p3{ 
 		margin-bottom: 2em;
 		font-weight: 500;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(0, 0, 0, 0.75);
 	}
 
 	br.clear {
@@ -2243,7 +2244,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #cfcfcf;
 		}
 
 		input[type="button"]:active,
@@ -2251,7 +2252,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #a8a8a8;
 		}
 
 /* Item */
@@ -2324,7 +2325,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #ffffff url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2369,7 +2370,7 @@ input, select, textarea {
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					color: #000000;
 				}
 
 	#logo {
@@ -2377,11 +2378,12 @@ input, select, textarea {
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		text-align: center;
 	}
 
 		#logo h1 {
 			position: relative;
-			color: #fff;
+			color: #000000;
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2391,7 +2393,7 @@ input, select, textarea {
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2415,7 +2417,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(0, 0, 0, 0.5);
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -2444,7 +2446,7 @@ input, select, textarea {
 					background: rgba(0, 0, 0, 0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 					color: #fff;
-				}
+				}.cover
 
 					#nav ul li a.active span:before {
 						color: #ffffff;
@@ -2491,7 +2493,8 @@ input, select, textarea {
 			overflow: hidden;
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-			text-align: center;			
+			text-align: center;
+			scroll-margin-top: 10px;
 		}
 
 			#main > section.dark {
@@ -2514,7 +2517,7 @@ input, select, textarea {
 				}
 
 					#main > section.dark a:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+						border-bottom-color: rgba(0, 0, 0, 0);
 					}
 
 			#main > section.cover {
@@ -2526,12 +2529,16 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner2.JPG");
+				background-image: url("../../images/Background.jpg");
 				background-size: 100%;
+				background-repeat: no-repeat;
+   				background-size: cover;
+    			background-position: center;
+
 			}
 
 			#main > section.two {
-				background-color: hwb(0 0% 100%);
+				background-color: hwb(0 100% 0%);
 
 			}
 
@@ -2541,8 +2548,8 @@ input, select, textarea {
 			}
 
 			#main > section.four {
-				background-color: #272727;
-
+				background-color: #ffffff;
+			
 			}
 			
 			#main > section.five {
@@ -2727,7 +2734,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: #ffffff url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2736,7 +2743,7 @@ input, select, textarea {
 				}
 
 				#header .bottom {
-					border-top: solid 1px rgba(255, 255, 255, 0.05);
+					border-top: solid 1px rgba(0, 0, 0, 0.05);
 					box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
 					padding-top: 2em;
 					margin-top: 2em;
@@ -2919,3 +2926,24 @@ input, select, textarea {
 				}
 
 	}
+
+/* Ensure header/nav is always interactive */
+#header {
+  position: fixed;          /* reinforce fixed positioning */
+  z-index: 10000;           /* above all content */
+  pointer-events: auto;
+}
+
+/* Prevent main content from blocking the header */
+#main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Kill invisible overlays that steal mouse events */
+#main::before,
+#main::after,
+section::before,
+section::after {
+  pointer-events: none;
+}
