@@ -2988,14 +2988,21 @@ section::after {
   pointer-events: none;
 }
 
-h1, h2, h4, h5, p, h6, footer, p2, p3{
-	padding-left: 24px;
-}
+@media screen and (max-width: 768px) {
 
-.container, .profile-pic, .image-row, .icons, .Button, .bottom-links, .bottom-text{
-	padding-left: 24px;
-}
+  h1, h2, h4, h5, p, h6, footer, p2, p3 {
+    padding-left: 24px;
+  }
 
-#Projects h2, h5, p2, p3{
-  padding-left: 0px;
+  .container, .profile-pic, .image-row, .icons, .Button, .bottom-links, .bottom-text {
+    padding-left: 24px;
+  }
+
+  #Projects h2,
+  #Projects h5,
+  #Projects p2,
+  #Projects p3 {
+    padding-left: 0 !important;
+  }
+
 }
