@@ -9,7 +9,7 @@
 
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, p2,p3, blockquote,
+iframe, h1, h2, h3, h4, h5, p, h6, p2,p3, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -24,14 +24,22 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+
+
+h6{
+	line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+html, body {
 	line-height: 1;
+	margin: 0;
+	padding: 0;
 }
 
 ol, ul {
@@ -74,39 +82,32 @@ input, select, textarea {
 }
 
 
-.three-photos .image-row {
-display: flex;
-justify-content: space-between;
-width: 100%;
+.image-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
 }
 
-.three-photos .image-box {
-width: 30%;
-height: 320px;
-border: 0px solid #000;
-box-sizing: border-box;
-overflow: hidden;
+.image-box {
+  flex: 1;
+  height: 200px;          /* desktop height */
+  overflow: hidden;
 }
 
-.three-photos .image-box img {
-width: 100%;
-height: 100%;
-object-fit: cover;        
-display: block;
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.profile-pic{
-	display: block;
-	margin: auto;
-	text-align: center;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
-  .three-photos .image-row {
+  .image-row {
     flex-direction: column;
   }
 
-  .three-photos .image-box {
+  .image-box {
     width: 100%;
     height: 220px;
   }
@@ -2985,4 +2986,16 @@ display: block;
 section::before,
 section::after {
   pointer-events: none;
+}
+
+h1, h2, h4, h5, p, h6, footer, p2, p3{
+	padding-left: 24px;
+}
+
+.container, .profile-pic, .image-row, .icons, .Button, .bottom-links, .bottom-text{
+	padding-left: 24px;
+}
+
+#Projects h2, h5, p2, p3{
+  padding-left: 0px;
 }
